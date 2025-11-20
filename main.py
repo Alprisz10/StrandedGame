@@ -7,6 +7,7 @@ import scene
 
 print(f"{layout.font.ijo}")
 while True:
+	print(f"{layout.font.ijo}")
 	
 	layout.font.clear()
 	arts.logo.anLogo()
@@ -21,6 +22,7 @@ while True:
 		
 		if cekUser == 0:
 			layout.font.clear()
+			
 			jawNama = input("Masukkan username : ")
 			queryNama = "INSERT INTO user ('nama') VALUES (?)"
 			dk.cur.execute(queryNama, (jawNama,))
